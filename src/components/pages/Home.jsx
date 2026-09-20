@@ -7,7 +7,8 @@ import TravelDeals from "../../Ui/TravelDeals";
 import TopThingsToDo from "../../Ui/TopThingsToDo";
 import ExploreTripo from "../../Ui/ExploreTripo";
 import { GuestsFavoritRooms } from "./GuestsFavoritRooms";
-import {DealSwiperHouses }from "../../Ui/DealSwiperHouses";
+import { DealSwiperHouses } from "../../Ui/DealSwiperHouses";
+import { HotelIdeas } from "./HotelIdeas";
 export default function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home() {
       <TopThingsToDo />
       <ExploreTripo />
       <GuestsFavoritRooms />
+      <HotelIdeas />
     </>
   );
 }

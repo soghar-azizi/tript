@@ -2,18 +2,16 @@
 import DealSwiper from "../../Ui/DealSwiper";
 import { favoritGuestRooms } from "../data/UserInfo";
 const favoritGustRoom = favoritGuestRooms; 
-export function GuestsFavoritRooms() {
-  console.log("data")
-  console.log(favoritGustRoom);
-  return (
-    <div>
-      <div className="w-[90%] mx-auto">
-        <h2 className="font-roboto font-semibold md:text-[40px]">
-          Deals for the Weekend
-        </h2>
 
-        <DealSwiper data={favoritGustRoom} />
-        
+export function GuestsFavoritRooms() {
+  return (
+    <div className="my-12">
+      <div className="w-[90%] mx-auto my-3">
+        <DealSwiper
+          className="bg-amber-white"
+          data={favoritGustRoom}
+          title={"Homes Guests Love"}
+        />
       </div>
     </div>
   );

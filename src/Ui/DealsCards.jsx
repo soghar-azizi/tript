@@ -79,7 +79,7 @@ export default function DealsCard({
     <div className="rounded-xl overflow-hidden">
       {/* ================= Image ================= */}
       <div
-        className="h-35 sm:h-45 md:h-55 lg:h-50 bg-cover bg-center rounded-t-3xl p-6"
+        className="h-35 sm:h-45 md:h-55 lg:h-50 bg-cover bg-center rounded-t-1xl p-6"
         style={{
           backgroundImage: `url(${bgImage})`,
         }}

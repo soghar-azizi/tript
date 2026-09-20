@@ -6,6 +6,11 @@
   src: url("./assets/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
   font-style: normal;
 }
+@font-face {
+  font-family: "Popins";
+  src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
+  font-style: normal;
+}
 @theme {
   --font-roboto: "Roboto", sans-serif;
   --color-primary:#0057FF;

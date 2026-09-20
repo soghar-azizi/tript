@@ -104,6 +104,22 @@ import exploreTripo9 from "../../assets/imges/explore-tripo-11.jpg";
 import exploreTripo10 from "../../assets/imges/explore-tripo-12.jpg";
 import exploreTripo11 from "../../assets/imges/explore-tripo-13.jpg";
 import exploreTripo12 from "../../assets/imges/explore-tripo-15.jpg";
+// ============================================= testimonials image==================================================
+import person1 from "../../assets/imges/person-1.png";
+import person2 from "../../assets/imges/person-2.png";
+import person3 from "../../assets/imges/person-3.png";
+import person4 from "../../assets/imges/person-4.png";
+import person5 from "../../assets/imges/person-5.png";
+import person6 from "../../assets/imges/person-6.png";
+import person7 from "../../assets/imges/person-7.jpg";
+import countryFlag1 from "../../assets/imges/malizia.jpg";
+import countryFlag2 from "../../assets/imges/US.png";
+import countryFlag3 from "../../assets/imges/France.jpg";
+import countryFlag4 from "../../assets/imges/AS.png";
+import countryFlag5 from "../../assets/imges/SK.png";
+import countryFlag6 from "../../assets/imges/canada.png";
+import countryFlag7 from "../../assets/imges/UK.png";
+
 
 // =====================destinatin api ======================================
 export const destinations = {
@@ -756,50 +772,166 @@ export const videos = [
 export const favoritGuestRooms = [
   {
     id: 3,
-    title: "Exclusive hotel deals",
-    description:
-      "Get special prices at selected properties available only for a limited time.",
+    image: villa3,
+    rating: 4.2,
+    review: "Very good",
+    viewers: 189,
+    name: "Desert Dream Retreat",
+    location: "Dubai, UAE",
+    pricePerNight: 350,
+    oldPrice: 450,
+    totalPrice: 700,
   },
   {
     id: 4,
-    title: "Weekend specials",
-    description:
-      "Enjoy up to 12% off selected weekend stays and make your short trip more affordable.",
+    image: villa4,
+    rating: 4.7,
+    review: "Excellent",
+    viewers: 320,
+    name: "Tropical Paradise Resort",
+    location: "Bali, Indonesia",
+    pricePerNight: 450,
+    oldPrice: 350,
+    totalPrice: 800,
   },
   {
     id: 5,
-    title: "Early booking discount",
-    description:
-      "Plan ahead and save more when you book your hotel several weeks before your trip.",
+    image: villa5,
+    rating: 4.1,
+    review: "Very good",
+    viewers: 142,
+    name: "Lakeside Haven House",
+    location: "Lake Como, Italy",
+    pricePerNight: 250,
+    oldPrice: 300,
+    totalPrice: 750,
   },
   {
     id: 6,
-    title: "Last-minute offers",
-    description:
-      "Find great prices on available rooms when you make a last-minute booking.",
+    image: villa6,
+    rating: 4.6,
+    review: "Excellent",
+    viewers: 278,
+    name: "Forest Whisper Cabin",
+    location: "British Columbia, Canada",
+    pricePerNight: 500,
+    oldPrice: 300,
+    totalPrice: 1000,
   },
   {
     id: 7,
-    title: "Long stay savings",
-    description:
-      "Stay longer and enjoy special discounts on selected hotels and vacation apartments.",
+    image: villa7,
+    rating: 4.3,
+    review: "Very good",
+    viewers: 210,
+    name: "Urban Luxury Apartment",
+    location: "Paris, France",
+    pricePerNight: 300,
+    oldPrice: 350,
+    totalPrice: 800,
   },
   {
     id: 8,
-    title: "Free breakfast deals",
-    description:
-      "Book selected properties and enjoy a complimentary breakfast during your stay.",
+    image: villa8,
+    rating: 4.8,
+    review: "Exceptional",
+    viewers: 350,
+    name: "Ocean View Paradise",
+    location: "Santorini, Greece",
+    pricePerNight: 450,
+    oldPrice: 400,
+    totalPrice: 700,
   },
   {
     id: 9,
-    title: "Family travel offers",
-    description:
-      "Save on family-friendly stays with special prices and offers for your next vacation.",
+    image: villa9,
+    rating: 4.0,
+    review: "Very good",
+    viewers: 125,
+    name: "Countryside Cozy Home",
+    location: "Tuscany, Italy",
+    pricePerNight: 550,
+    oldPrice: 350,
+    totalPrice: 900,
   },
   {
     id: 10,
-    title: "Member-only prices",
-    description:
-      "Join our community to unlock special hotel prices and extra savings on selected stays.",
+    image: villa10,
+    rating: 4.9,
+    review: "Exceptional",
+    viewers: 410,
+    name: "Snowy Peak Chalet",
+    location: "Zermatt, Switzerland",
+    pricePerNight: 600,
+    oldPrice: 300,
+    totalPrice: 1200,
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Ethan Rogrinho",
+    image: person1,
+    flag:countryFlag1,
+    country: "Malaysia",
+    countryCode: "MY",
+    comment: "This place is exactly like the picture posted on Tripto. Great service, we had a great stay!",
+  },
+  {
+    id: 2,
+    name: "Sophia Anderson",
+    image: person2,
+    flag2:countryFlag2,
+    country: "United States",
+    countryCode: "US",
+    comment: "Everything was beautiful and comfortable. The place looked exactly like the photos!",
+  },
+  {
+    id: 3,
+    name: "Lucas Martin",
+    image: person3,
+    flag3:countryFlag3,
+    country: "France",
+    countryCode: "FR",
+    comment: "A wonderful experience from beginning to end. The staff were friendly and helpful.",
+  },
+  {
+    id: 4,
+    name: "Mia Wilson",
+    image: person4,
+    flag:countryFlag4,
+    country: "Australia",
+    countryCode: "AU",
+    comment: "The location was perfect and the room was incredibly comfortable. I would happily stay here again.",
+  },
+  {
+    id: 5,
+    name: "Daniel Kim",
+    image: person5,
+    flag:countryFlag5,
+    country: "South Korea",
+    countryCode: "KR",
+    comment: "Amazing stay! Everything was clean, modern, and exactly as described on Tripto.",
+  },
+  {
+    id: 6,
+    name: "Emma Laurent",
+    image: person6,
+    flag:countryFlag6,
+    country: "Canada",
+    countryCode: "CA",
+    comment: "The whole experience was smooth and relaxing. The hotel was even better than I expected.",
+  },
+  {
+    id: 7,
+    name: "Oliver Smith",
+    image: person7,
+    flag:countryFlag7,
+    country: "United Kingdom",
+    countryCode: "GB",
+    comment: "Beautiful room, great atmosphere, and very helpful staff. I really enjoyed my stay.",
+  },
+];
+
+
