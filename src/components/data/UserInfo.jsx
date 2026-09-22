@@ -47,7 +47,7 @@ import flag4 from "../../assets/imges/sh.png";
 import flag2 from "../../assets/imges/vn.png";
 import flag1 from "../../assets/imges/fi.png";
 import flag3 from "../../assets/imges/pm.png";
-// top things to do 
+// top things to do
 import explore1 from "../../assets/imges/explore-1.jpg";
 import explore2 from "../../assets/imges/explore-2.jpg";
 import explore3 from "../../assets/imges/explore-3.jpg";
@@ -116,10 +116,9 @@ import countryFlag1 from "../../assets/imges/malizia.jpg";
 import countryFlag2 from "../../assets/imges/US.png";
 import countryFlag3 from "../../assets/imges/France.jpg";
 import countryFlag4 from "../../assets/imges/AS.png";
-import countryFlag5 from "../../assets/imges/SK.png";
+import countryFlag5 from "../../assets/imges/sk.png";
 import countryFlag6 from "../../assets/imges/canada.png";
 import countryFlag7 from "../../assets/imges/UK.png";
-
 
 // =====================destinatin api ======================================
 export const destinations = {
@@ -768,7 +767,6 @@ export const videos = [
     star: fillStar,
   },
 ];
-;
 export const favoritGuestRooms = [
   {
     id: 3,
@@ -873,65 +871,70 @@ export const testimonials = [
     id: 1,
     name: "Ethan Rogrinho",
     image: person1,
-    flag:countryFlag1,
+    flag: countryFlag1,
     country: "Malaysia",
     countryCode: "MY",
-    comment: "This place is exactly like the picture posted on Tripto. Great service, we had a great stay!",
+    comment:
+      "This place is exactly like the picture posted on Tripto. Great service, we had a great stay!",
   },
   {
     id: 2,
     name: "Sophia Anderson",
     image: person2,
-    flag2:countryFlag2,
+    flag: countryFlag2,
     country: "United States",
     countryCode: "US",
-    comment: "Everything was beautiful and comfortable. The place looked exactly like the photos!",
+    comment:
+      "Everything was beautiful and comfortable. The place looked exactly like the photos!",
   },
   {
     id: 3,
     name: "Lucas Martin",
     image: person3,
-    flag3:countryFlag3,
+    flag: countryFlag3,
     country: "France",
     countryCode: "FR",
-    comment: "A wonderful experience from beginning to end. The staff were friendly and helpful.",
+    comment:
+      "A wonderful experience from beginning to end. The staff were friendly and helpful.",
   },
   {
     id: 4,
     name: "Mia Wilson",
     image: person4,
-    flag:countryFlag4,
+    flag: countryFlag4,
     country: "Australia",
     countryCode: "AU",
-    comment: "The location was perfect and the room was incredibly comfortable. I would happily stay here again.",
+    comment:
+      "The location was perfect and the room was incredibly comfortable. I would happily stay here again.",
   },
   {
     id: 5,
     name: "Daniel Kim",
     image: person5,
-    flag:countryFlag5,
+    flag: countryFlag5,
     country: "South Korea",
     countryCode: "KR",
-    comment: "Amazing stay! Everything was clean, modern, and exactly as described on Tripto.",
+    comment:
+      "Amazing stay! Everything was clean, modern, and exactly as described on Tripto.",
   },
   {
     id: 6,
     name: "Emma Laurent",
     image: person6,
-    flag:countryFlag6,
+    flag: countryFlag6,
     country: "Canada",
     countryCode: "CA",
-    comment: "The whole experience was smooth and relaxing. The hotel was even better than I expected.",
+    comment:
+      "The whole experience was smooth and relaxing. The hotel was even better than I expected.",
   },
   {
     id: 7,
     name: "Oliver Smith",
     image: person7,
-    flag:countryFlag7,
+    flag: countryFlag7,
     country: "United Kingdom",
     countryCode: "GB",
-    comment: "Beautiful room, great atmosphere, and very helpful staff. I really enjoyed my stay.",
+    comment:
+      "Beautiful room, great atmosphere, and very helpful staff. I really enjoyed my stay.",
   },
 ];
-
-

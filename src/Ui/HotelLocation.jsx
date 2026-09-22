@@ -4,7 +4,7 @@ import SearchButton from "./SearchButton"
 export default function HotelLocation() {
   return (
 
-    <div className="w-[80%] flex flex-col gap-8 md:flex-row md:items-center md:gap-4 md:justify-between relative top-50 rounded-2xl px-5 bg-white mx-auto  pt-14 pb-8 md:px-12 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
+    <div className="w-[80%] flex flex-col gap-8 md:flex-row md:items-center md:gap-4 md:justify-between relative top-50 rounded-2xl px-5  mx-auto z-10 bg-white pt-14 pb-8 md:px-12 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
       <div className="text-base font-[Roboto] font-Medium">
         <b className="text-dark-grey">Location</b>
         <p className="text-grey-lighter">Where are you going</p>

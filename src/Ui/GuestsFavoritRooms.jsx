@@ -1,7 +1,6 @@
-
-import DealSwiper from "../../Ui/DealSwiper";
-import { favoritGuestRooms } from "../data/UserInfo";
-const favoritGustRoom = favoritGuestRooms; 
+import DealSwiper from "./DealSwiper";
+import { favoritGuestRooms } from "../components/data/UserInfo";
+const favoritGustRoom = favoritGuestRooms;
 
 export function GuestsFavoritRooms() {
   return (

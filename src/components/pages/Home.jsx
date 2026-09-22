@@ -6,9 +6,10 @@ import { TrendingSection } from "../../Ui/TrendingSection";
 import TravelDeals from "../../Ui/TravelDeals";
 import TopThingsToDo from "../../Ui/TopThingsToDo";
 import ExploreTripo from "../../Ui/ExploreTripo";
-import { GuestsFavoritRooms } from "./GuestsFavoritRooms";
+import { GuestsFavoritRooms } from "../../Ui/GuestsFavoritRooms";
 import { DealSwiperHouses } from "../../Ui/DealSwiperHouses";
-import { HotelIdeas } from "./HotelIdeas";
+import { HotelIdeas } from "../../Ui/HotelIdeas";
+import { Footer } from "../../Ui/Footer";
 export default function Home() {
   return (
     <>
@@ -22,6 +23,7 @@ export default function Home() {
       <ExploreTripo />
       <GuestsFavoritRooms />
       <HotelIdeas />
+      <Footer />
     </>
   );
 }

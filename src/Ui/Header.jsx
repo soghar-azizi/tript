@@ -10,23 +10,16 @@ export default function Header({ type = "home" }) {
   console.log(type);
   return (
     <div className="w-[90%] mx-auto flex items-center justify-between my-3">
-
-      {/* Logo */}
       <div className="w-[30%]">
         <img src={Logo} alt="Logo" className="w-25" />
       </div>
-
-      {/* SearchBar */}
       {type === "search" && (
         <div className="flex-1 flex justify-center">
           <SearchBar />
         </div>
       )}
-
-      {/* Right side */}
       <div className="w-[30%] flex justify-end items-center gap-4">
 
-        {/* Currency */}
         <div className="flex items-center gap-2">
           <img src={country} alt="country" />
           <p className="font-medium text-[16px] text-blue-600">
@@ -34,7 +27,6 @@ export default function Header({ type = "home" }) {
           </p>
         </div>
 
-        {/* Login or Profile */}
         {type === "login" ? (
           <div className="bg-primary text-white rounded px-4 py-2">
             Login
