@@ -9,7 +9,7 @@ export function HotelLocationItems({
 
   return (
     <div
-      className={`text-base font-roboto hover:bg-blue-400 font-medium text-wrap ${className}`}
+      className={`text-base font-roboto font-medium text-wrap ${className}`}
       onClick={onClick}
     >
       <label className="text-black">{items[0]}</label>

@@ -28,7 +28,7 @@ export default function HotelLocation({ dropDown, setDropDown }) {
             "Location",
             locationName ? locationName : "Where are you going?",
           ]}
-          className={`pl-3 w-full hover:bg-blue-100 rounded-md ${showLocation ? "border-medium-blue px-4 py-2 rounded-xl border-2" : ""}`}
+          className={`pl-3 w-full hover:bg-blue-50 rounded-md ${showLocation ? "border-medium-blue px-4 py-2 rounded-xl border-2" : ""}`}
           type="text"
           onClick={() => setShowLocation(true)}
         />
@@ -52,7 +52,7 @@ export default function HotelLocation({ dropDown, setDropDown }) {
             "Check In",
             checkInDate ? checkInDate.toLocaleDateString() : "Add Date",
           ]}
-          className={`md:border-l hover:bg-blue-100 rounded-md ${checkIn ? "border-medium-blue px-4 py-2 rounded-xl border-2" : " border-light-grey"} px-3`}
+          className={`md:border-l hover:bg-blue-50 rounded-md ${checkIn ? "border-medium-blue px-4 py-2 rounded-xl border-2" : " border-light-grey"} px-3`}
           onClick={() => setCheckIn(true)}
         />
 
@@ -71,7 +71,7 @@ export default function HotelLocation({ dropDown, setDropDown }) {
             "Rooms and Guests",
             `${countAdult} adults, ${countChildren} children, ${countPets} pets,${room} room`,
           ]}
-          className={`md:border-l hover:bg-blue-100 rounded-md ${showCountGuest ? "border-medium-blue py-2 rounded-xl border-2" : "border-light-grey"} px-3 `}
+          className={`md:border-l hover:bg-blue-50 rounded-md ${showCountGuest ? "border-medium-blue py-2 rounded-xl border-2" : "border-light-grey"} px-3 `}
           onClick={() => setShowCountGuest(true)}
         />
       </div>
@@ -79,7 +79,7 @@ export default function HotelLocation({ dropDown, setDropDown }) {
       <SearchButton
         className="bg-primary border-0 p-3 rounded-xl text-white flex items-center justify-center gap-2 w-[50%] justify-self-end"
         name="Search"
-        onClick={()=>navigate('../components/pages/SearchResults.jsx')}
+        onClick={()=>navigate('./components/pages/SearchResults.jsx')}
       />
       {checkIn && (
         <DatePickerPopup
