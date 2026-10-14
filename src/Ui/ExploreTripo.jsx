@@ -18,10 +18,9 @@ export default function ExploreTripo() {
   function closeVideo() {
     setPlay(null);
   }
-  function closeExploe(){
-    setShow(null)
+  function closeExploe() {
+    setShow(null);
   }
-
 
   return (
     <div className="bg-light-grey py-10">

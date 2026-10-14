@@ -162,9 +162,9 @@ export const destinations = {
       id: 5,
       city: "Santorini",
       country: "Greece",
+      image: summer1,
       price: 180,
       description: "Blue sea and beautiful sunsets",
-      image: summer1,
     },
     {
       id: 6,
@@ -186,9 +186,9 @@ export const destinations = {
       id: 8,
       city: "Maldives",
       country: "Maldives",
+      image: summer4,
       price: 250,
       description: "Crystal clear water and peaceful beaches",
-      image: summer4,
     },
   ],
 
@@ -256,9 +256,9 @@ export const destinations = {
       id: 16,
       city: "Zermatt",
       country: "Switzerland",
+      image: winter4,
       price: 280,
       description: "Amazing mountains, snow and winter sports",
-      image: winter4,
     },
   ],
 };
@@ -326,11 +326,11 @@ export const slidesData = [
   {
     id: 6,
     image: villa6,
+    name: "Forest Whisper Cabin",
+    location: "British Columbia, Canada",
     rating: 4.6,
     review: "Excellent",
     viewers: 278,
-    name: "Forest Whisper Cabin",
-    location: "British Columbia, Canada",
     pricePerNight: 500,
     oldPrice: 300,
     totalPrice: 1000,
@@ -338,11 +338,11 @@ export const slidesData = [
   {
     id: 7,
     image: villa7,
+    name: "Urban Luxury Apartment",
+    location: "Paris, France",
     rating: 4.3,
     review: "Very good",
     viewers: 210,
-    name: "Urban Luxury Apartment",
-    location: "Paris, France",
     pricePerNight: 300,
     oldPrice: 350,
     totalPrice: 800,
@@ -362,23 +362,23 @@ export const slidesData = [
   {
     id: 9,
     image: villa9,
+    name: "Countryside Cozy Home",
+    location: "Tuscany, Italy",
     rating: 4.0,
     review: "Very good",
     viewers: 125,
-    name: "Countryside Cozy Home",
-    location: "Tuscany, Italy",
     pricePerNight: 550,
     oldPrice: 350,
     totalPrice: 900,
   },
   {
     id: 10,
-    image: villa10,
-    rating: 4.9,
     review: "Exceptional",
-    viewers: 410,
     name: "Snowy Peak Chalet",
     location: "Zermatt, Switzerland",
+    image: villa10,
+    rating: 4.9,
+    viewers: 410,
     pricePerNight: 600,
     oldPrice: 300,
     totalPrice: 1200,
@@ -771,11 +771,11 @@ export const favoritGuestRooms = [
   {
     id: 3,
     image: villa3,
+    name: "Desert Dream Retreat",
+    location: "Dubai, UAE",
     rating: 4.2,
     review: "Very good",
     viewers: 189,
-    name: "Desert Dream Retreat",
-    location: "Dubai, UAE",
     pricePerNight: 350,
     oldPrice: 450,
     totalPrice: 700,
@@ -783,11 +783,11 @@ export const favoritGuestRooms = [
   {
     id: 4,
     image: villa4,
+    name: "Tropical Paradise Resort",
+    location: "Bali, Indonesia",
     rating: 4.7,
     review: "Excellent",
     viewers: 320,
-    name: "Tropical Paradise Resort",
-    location: "Bali, Indonesia",
     pricePerNight: 450,
     oldPrice: 350,
     totalPrice: 800,
@@ -807,11 +807,11 @@ export const favoritGuestRooms = [
   {
     id: 6,
     image: villa6,
+    name: "Forest Whisper Cabin",
+    location: "British Columbia, Canada",
     rating: 4.6,
     review: "Excellent",
     viewers: 278,
-    name: "Forest Whisper Cabin",
-    location: "British Columbia, Canada",
     pricePerNight: 500,
     oldPrice: 300,
     totalPrice: 1000,
@@ -819,11 +819,11 @@ export const favoritGuestRooms = [
   {
     id: 7,
     image: villa7,
+    name: "Urban Luxury Apartment",
+    location: "Paris, France",
     rating: 4.3,
     review: "Very good",
     viewers: 210,
-    name: "Urban Luxury Apartment",
-    location: "Paris, France",
     pricePerNight: 300,
     oldPrice: 350,
     totalPrice: 800,
@@ -936,5 +936,165 @@ export const testimonials = [
     countryCode: "GB",
     comment:
       "Beautiful room, great atmosphere, and very helpful staff. I really enjoyed my stay.",
+  },
+];
+import city1 from "../../assets/imges/automn-1.jpg";
+export const filterBY = {
+  Hotel: [
+    {
+      id: 1,
+      name: "Snowy Peak Chalet",
+      location: "Zermatt, Switzerland",
+      image: villa10,
+    },
+    {
+      id: 2,
+      image: villa9,
+      name: "Countryside Cozy Home",
+      location: "Tuscany, Italy",
+    },
+    {
+      id: 3,
+      image: villa7,
+      name: "Urban Luxury Apartment",
+      location: "Paris, France",
+    },
+    {
+      id: 4,
+      image: villa6,
+      name: "Forest Whisper Cabin",
+      location: "British Columbia, Canada",
+    },
+  ],
+
+  House: [
+    {
+      id: 1,
+      location: "Zermatt",
+      name: "Switzerland",
+      image: winter4,
+    },
+    {
+      id: 2,
+      location: "Munich",
+      image: automn4,
+      name: "Germany",
+    },
+    {
+      id: 3,
+      location: "Maldives",
+      name: "Maldives",
+      image: summer4,
+    },
+    {
+      id: 4,
+      location: "Santorini",
+      name: "Greece",
+      image: summer1,
+    },
+  ],
+
+  "Guet House": [
+    {
+      id: 1,
+      image: villa4,
+      name: "Tropical Paradise Resort",
+      location: "Bali, Indonesia",
+    },
+    {
+      id: 2,
+      image: villa3,
+      name: "Desert Dream Retreat",
+      location: "Dubai, UAE",
+    },
+    {
+      id: 3,
+      image: villa6,
+      name: "Forest Whisper Cabin",
+      location: "British Columbia, Canada",
+    },
+    {
+      id: 4,
+      image: villa7,
+      name: "Urban Luxury Apartment",
+      location: "Paris, France",
+    },
+  ],
+
+  Cabins: [
+    {
+      id: 1,
+      image: exploreTripo1,
+      name: "Phuket, Thailand",
+    },
+    {
+      id: 2,
+      image: exploreTripo9,
+      name: "Maldives",
+    },
+    {
+      id: 5,
+      image: exploreTripo4,
+      name: "Paris, France",
+    },
+    {
+      id: 4,
+      image: exploreTripo10,
+      name: "Swiss Alps, Switzerland",
+    },
+  ],
+
+  Glamping: [
+    {
+      id: 1,
+      image: image1,
+      name: "Binz",
+    },
+    {
+      id: 2,
+      image: image2,
+      name: "Bergen",
+    },
+    {
+      id: 3,
+      image: image3,
+      name: "Sassnitz",
+    },
+  ],
+
+  Doms: [
+    {
+      id: 1,
+      name: "Sagrada Familia",
+      image: explore1,
+    },
+    {
+      id: 2,
+      name: "Park Güell",
+      image: explore2,
+    },
+    {
+      id: 3,
+      name: "Casa Milà",
+      image: explore3,
+    },
+    {
+      id: 4,
+      name: "Sacred Heart Temple",
+      image: explore4,
+    },
+    {
+      id: 5,
+      name: "Arc de Triomf",
+      image: explore5,
+    },
+  ],
+};
+
+export const recentSearch = [
+  {
+    image: city1,
+    info: "Age 123 +87378",
+    name: "English",
   },
 ];

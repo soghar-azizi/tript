@@ -8,10 +8,10 @@ import HeroImage4 from "../assets/imges/view-4.jpg";
 import HeroImage5 from "../assets/imges/view-5.jpg";
 import HotelFeature from "./HotelFeature";
 import HotelLocation from "./HotelLocation";
-
+import { GuestProvider } from "./GuestContext";
 export default function HeroSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+  const [dropDown, setdropDown] = useState(false);
   const heroImages = [
     HeroImage1,
     HeroImage2,
@@ -25,7 +25,7 @@ export default function HeroSection() {
       setCurrentIndex((prevItem) =>
         prevItem === heroImages.length - 1 ? 0 : prevItem + 1,
       );
-    }, 2800);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -52,8 +52,11 @@ export default function HeroSection() {
         </h2>
       </div>
       {/* other content */}
-      <HotelFeature />
-      <HotelLocation />
+      <HotelFeature setdropDown={setdropDown}/>
+      <GuestProvider>
+
+      <HotelLocation dropDown={dropDown} setdropDown={setdropDown} />
+      </GuestProvider>
     </div>
   );
 }
