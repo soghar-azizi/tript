@@ -1,16 +1,41 @@
-# React + Vite
+# Tripto
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Travel booking front end built with React 19, Vite, Tailwind CSS 4 and React Router 7.
 
-Currently, two official plugins are available:
+```bash
+pnpm install
+pnpm dev      # start dev server
+pnpm build    # production build
+pnpm lint     # oxlint
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project structure
 
-## React Compiler
+```
+src/
+├── main.jsx, App.jsx, index.css   entry point, router, global styles and Tailwind theme
+├── assets/
+│   ├── fonts/
+│   └── images/          kebab-case file names; country flags in images/flags/
+├── context/             React context (GuestContext + GuestProvider)
+├── data/mockData.js     static content until there is an API
+├── layouts/             route layouts (AppLayout renders the Header + <Outlet/>)
+├── pages/               one component per route
+└── components/
+    ├── common/          small reusable UI shared across features
+    ├── layout/          Header, SearchBar, footer/
+    └── home/            Home page sections, grouped by section:
+        ├── hero/            hero + booking search form (dates, guests, location)
+        ├── deals/           deal sliders and cards
+        ├── destinations/    trending destinations, top sights, things to do
+        ├── explore/         video showcase
+        ├── testimonials/
+        └── Facilities.jsx
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Conventions
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- One component per file; the file name matches the component name (PascalCase).
+- Hooks and plain modules use camelCase (`useGuest`, `mockData.js`).
+- Keep a component next to the feature that uses it; move it to `components/common/` only once a second feature needs it.
+- Import paths are case-sensitive in CI/Linux even though macOS is not, so match file names exactly.

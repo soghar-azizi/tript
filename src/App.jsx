@@ -10,17 +10,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // ================================= Pages =================================
-import Home from "./components/pages/Home";
-import Login from "./components/pages/Login";
-import HelpCenter from "./components/pages/HelpCenter";
-import Payment from "./components/pages/Payment";
-import Profile from "./components/pages/Profile";
-import PagesNotFound from "./components/pages/PagesNotFound";
-import HotelDetails from "./components/pages/HotelDetails";
-import SearchResults from "./components/pages/SearchResults";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import HelpCenter from "./pages/HelpCenter";
+import Payment from "./pages/Payment";
+import Profile from "./pages/Profile";
+import NotFound from "./pages/NotFound";
+import HotelDetails from "./pages/HotelDetails";
+import SearchResults from "./pages/SearchResults";
 
 // ================================= Components =================================
-import AppLayout from "./components/layout/AppLayout";
+import AppLayout from "./layouts/AppLayout";
 
 // ================================= Router =================================
 const router = createBrowserRouter([
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       { path: "hotelDetails", element: <HotelDetails /> },
       { path: "payment", element: <Payment /> },
       { path: "profile", element: <Profile /> },
-      { path: "pagesNotFound", element: <PagesNotFound /> },
+      { path: "*", element: <NotFound /> },
       { path: "search", element: <SearchResults /> },
     ],
   },
@@ -51,4 +51,3 @@ export default function App() {
 
   return <RouterProvider router={router} />;
 }
-;
